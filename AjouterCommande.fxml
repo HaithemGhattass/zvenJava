@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="417.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterCommandeController">
+   <children>
+      <VBox layoutX="75.0" layoutY="10.0" prefHeight="392.0" prefWidth="462.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="8.0" lineSpacing="100.0" prefHeight="49.0" prefWidth="463.0" text="ADD ORDER" textAlignment="CENTER" textFill="#25221f">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label text="ADRESSE LIVRAISON :">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adresse" promptText="VOTRE ADRESSE ..." styleClass="textfield-design" stylesheets="@design.css" />
+            <Label text="TOTAL COMMANDE :">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prix" styleClass="textfield-design" stylesheets="@design.css" />
+            <Label text="MODE LIVRAISON :">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combo" prefHeight="25.0" prefWidth="462.0" promptText="veuillez choisir un mode..." />
+            <Label text="RENSEIGNEMENT :">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="renseignement" prefHeight="59.0" prefWidth="159.0" promptText="VOTRE RETOUR ..." styleClass="textfield-design" stylesheets="@design.css" />
+            <Hyperlink fx:id="payer" alignment="CENTER_RIGHT" contentDisplay="RIGHT" onAction="#payer" prefHeight="23.0" prefWidth="109.0" styleClass="card1" stylesheets="@design.css" text="Payer Par Carte ?" textFill="#f5aa64" underline="true">
+               <VBox.margin>
+                  <Insets left="348.0" top="20.0" />
+               </VBox.margin>
+            </Hyperlink>
+         </children>
+      </VBox>
+      <Button layoutX="74.0" layoutY="326.0" mnemonicParsing="false" onAction="#addCommande" prefHeight="31.0" prefWidth="462.0" styleClass="button-design" stylesheets="@design.css" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
