@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="855.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zvendelivery.gui.MyRestaurantsController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" styleClass="right-bar-background" stylesheets="@../utils/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="233.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/avatar4.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label text="Hello user">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="21.0" prefWidth="250.0">
+                     <children>
+                        <Label alignment="CENTER" text="its  " textFill="#a7a29d">
+                           <font>
+                              <Font name="Calibri" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="lunch " textFill="#f67f00">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" text="time" textFill="#a7a29d">
+                           <font>
+                              <Font name="Calibri" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="120.0" styleClass="primary-background" stylesheets="@../utils/styles.css" text="Order now" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <VBox alignment="CENTER" prefHeight="260.0" prefWidth="230.0" spacing="20.0">
+                     <children>
+                        <HBox fx:id="events1" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/3669363_dashboard_ic_icon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="home" prefHeight="32.0" prefWidth="119.0" text="Home" textFill="#a7a29d">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="users" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/restaurant_on_site_24pxorange.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="33.0" prefWidth="119.0" text="Restaurant" textFill="#a7a29d">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="reclamations" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/male_user_80px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="119.0" text="Users" textFill="#a7a29d">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="restaurants" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/document_52px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="33.0" prefWidth="119.0" text="Reclamation">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="events" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/notification_32px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="119.0" text="Events" textFill="#a7a29d">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="products" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/pizza_32px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="119.0" text="Products" textFill="#a7a29d">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="commands" prefHeight="32.0" prefWidth="250.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/add_shopping_cart_64px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="32.0" prefWidth="119.0" text="Commands" textFill="#a7a29d">
+                                 <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Pane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <HBox prefHeight="32.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logout_rounded_up_32px.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="119.0" text="Logout" textFill="#a7a29d">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="secondary-background" stylesheets="@../utils/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" styleClass="top-bar-background" stylesheets="@../utils/styles.css">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/search_24px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField prefHeight="31.0" prefWidth="305.0" promptText="Search for restaurants" styleClass="transparent" stylesheets="@../utils/styles.css" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/notification_32px.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="68.0" prefWidth="230.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/avatar4.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="33.0" prefWidth="141.0" text="esm el user" textFill="#a7a29d">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="195.0" prefWidth="1005.0">
+                     <children>
+                        <Label fx:id="admin" prefHeight="32.0" prefWidth="285.0" text="welcome esm el user">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ScrollPane prefHeight="393.0" prefWidth="1005.0">
+                     <content>
+                        <VBox fx:id="vbox" prefHeight="374.0" prefWidth="1006.0" styleClass="white-card" stylesheets="@../utils/styles.css">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="230.0">
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="137.0" text="restaurant" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="33.0" prefWidth="101.0" text="titre" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="33.0" prefWidth="137.0" text="description" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label prefHeight="33.0" prefWidth="137.0" text="status" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label prefHeight="33.0" prefWidth="209.0" text="Creation Date" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="33.0" prefWidth="111.0" text="traité pae:" textFill="#a7a29d">
+                                       <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Pane prefHeight="68.0" prefWidth="171.0" />
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/restaurant_on_site_24px.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/restaurant_on_site_24px.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

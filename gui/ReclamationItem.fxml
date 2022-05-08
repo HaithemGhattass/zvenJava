@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<VBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zvendelivery.gui.ReclamationItemController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="avatar" fitHeight="78.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/avatar4.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="90.0" prefWidth="196.0">
+               <children>
+                  <Label fx:id="username" prefHeight="22.0" prefWidth="269.0" text="username" textFill="#a41d1d">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="titre" text="titre">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <Pane prefHeight="74.0" prefWidth="336.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="336.0">
+                     <children>
+                        <Slider fx:id="food" blockIncrement="1.0" max="10.0" prefHeight="14.0" prefWidth="96.0" visible="false" />
+                        <Slider fx:id="service" blockIncrement="1.0" max="10.0" prefHeight="14.0" prefWidth="107.0" visible="false" />
+                        <Slider fx:id="restaurant_id" blockIncrement="1.0" max="1000.0" visible="false" />
+                        <Slider fx:id="prix" blockIncrement="1.0" max="10.0" prefHeight="14.0" prefWidth="104.0" visible="false" />
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <ImageView fx:id="modifier" fitHeight="43.0" fitWidth="68.0" onMouseClicked="#modifier" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/278934617_463511048885207_6927064491084451051_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="supprimer" fitHeight="43.0" fitWidth="68.0" onMouseClicked="#supprimer" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/278934614_552518896245685_2517416730115354640_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="addReply" fitHeight="43.0" fitWidth="68.0" onMouseClicked="#modifier" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/279082001_541454830768954_6921988489121080071_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox prefHeight="84.0" prefWidth="496.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="description" wrappingWidth="204.6708984375" />
+                  <Rating fx:id="rating" disable="true" nodeOrientation="LEFT_TO_RIGHT" partialRating="true">
+                     <effect>
+                        <ColorAdjust brightness="-0.4" contrast="0.64" hue="0.05" saturation="0.5" />
+                     </effect></Rating>
+                  <Label fx:id="date" prefHeight="21.0" prefWidth="187.0" text="date" />
+               </children>
+            </VBox>
+            <Pane prefHeight="80.0" prefWidth="386.0">
+               <children>
+                  <Slider fx:id="id" blockIncrement="1.0" layoutX="113.0" layoutY="35.0" max="1000.0" visible="false" />
+               </children></Pane>
+            <ImageView fx:id="image" fitHeight="84.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/drag-drop.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

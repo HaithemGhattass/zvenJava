@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zvendelivery.gui.ReplyItemController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/avatar4.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="90.0" prefWidth="196.0">
+               <children>
+                  <Label fx:id="username" prefHeight="22.0" prefWidth="269.0" text="username" textFill="#a41d1d">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="titre" text="titre">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <Pane prefHeight="70.0" prefWidth="472.0">
+               <children>
+                  <HBox prefHeight="115.0" prefWidth="257.0" />
+               </children>
+            </Pane>
+            <ImageView fx:id="supprimerReply" fitHeight="43.0" fitWidth="68.0" onMouseClicked="#supprimer" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/216658.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox prefHeight="85.0" prefWidth="785.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" text="description" wrappingWidth="204.6708984375" />
+                  <Label fx:id="date" prefHeight="21.0" prefWidth="187.0" text="date" />
+               </children>
+            </VBox>
+            <Pane prefHeight="22.0" prefWidth="386.0">
+               <children>
+                  <Slider fx:id="id" blockIncrement="1.0" layoutX="50.0" layoutY="19.0" max="1000.0" visible="false" />
+               </children></Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

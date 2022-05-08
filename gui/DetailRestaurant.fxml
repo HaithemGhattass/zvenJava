@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onMousePressed="#click" prefHeight="276.0" prefWidth="539.0" stylesheets="@../utils/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zvendelivery.gui.DetailRestaurantController">
+   <children>
+      <VBox fx:id="item1" alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="276.0" prefWidth="461.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="150.0" fitWidth="526.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox prefHeight="100.0" prefWidth="319.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="254.0">
+                     <children>
+                        <Label fx:id="name" text="esm el restaurant" />
+                        <Label fx:id="category" text="categorie" />
+                        <Text fx:id="desc" strokeType="OUTSIDE" strokeWidth="0.0" text="description" wrappingWidth="73.63037109375" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="100.0" prefWidth="163.0" />
+                  <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="304.0">
+                     <children>
+                        <HBox alignment="TOP_RIGHT" prefHeight="21.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="heureO" text="heure ouverture" />
+                              <Label text=" - " />
+                              <Label fx:id="heureF" text="heure fermture" />
+                           </children>
+                        </HBox>
+                        <Label fx:id="gouv" text="gouvernaurat" />
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="adress" text="adresse" />
+                              <Label text=" , " />
+                              <Label fx:id="cite" text="cite" />
+                              <Label text=" , " />
+                              <Label fx:id="codep" text="code postal" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>
